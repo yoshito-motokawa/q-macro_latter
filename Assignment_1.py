@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
+# tauchen関数
 def tauchen(n, mu, rho, sigma):
     m = 1 / np.sqrt(1 - rho**2)
     state_space = np.linspace(mu - m*sigma, mu + m*sigma, n)
